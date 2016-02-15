@@ -2,6 +2,8 @@ package com.zghw.base.enumx;
 
 import java.util.Random;
 
+import com.zghw.base.Generator;
+
 /**
  * enum无法继承 但可以实现一个或多个接口
  * 枚举和接口的使用

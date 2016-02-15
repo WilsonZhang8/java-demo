@@ -5,6 +5,8 @@ import static com.zghw.base.enumx.VendingMachine.StateDuration.TRANSIENT;
 import java.util.Arrays;
 import java.util.Iterator;
 
+import com.zghw.base.Generator;
+
 /**
  * 自动售货机 责任链和状态模式
  * 
