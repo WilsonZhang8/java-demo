@@ -43,6 +43,7 @@ public class BaseAnnotation {
 	}
 	public static void main(String args[]){
 		resloveAnnotation(UseCase.class);
+		System.out.println(new BaseAnnotation().hashCode());
 	}
 }
 
