@@ -1,5 +1,8 @@
 package com.zghw.base;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * final 作用在字段上
  * 
@@ -96,6 +99,17 @@ public class FinalXFiled {
 		System.out.println("ss=" + this.ss + " Value.v=" + this.valb.v);
 	}
 
+	//当一个final 定义在引用类型上 把这个值赋给 另外一个对象,
+	//它们使用的是同一分
+	public void printFinalSet(){
+		Value fvalUse =this.fval;
+		List<Object> list =new ArrayList<Object>();
+		list.add("sdfsdf");
+		list.add("werwerwe");
+		fvalUse.setList(list);
+		System.out.println(""+this.fval.getList().size());
+		System.out.println(""+fvalUse.getList().get(0));
+	}
 	public static void main(String[] args) {
 		FinalXFiled f = new FinalXFiled();
 		f.test();
@@ -113,6 +127,7 @@ public class FinalXFiled {
 		f1.printFinalX();
 		f2.printFinalX();
 		f3.printFinalX();
+		f3.printFinalSet();
 	}
 
 }

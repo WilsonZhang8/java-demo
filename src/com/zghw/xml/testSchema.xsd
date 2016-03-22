@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/testSchema" xmlns:tns="http://www.example.org/testSchema" elementFormDefault="qualified">
+
+
+
+    <xsd:complexType name="integer"></xsd:complexType>
+
+    <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+
+    <xsd:element name="User" type="xsd:ENTITY"></xsd:element>
+
+    <xsd:complexType name="NewComplexType"></xsd:complexType>
+</xsd:schema>
